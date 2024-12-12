@@ -8,7 +8,7 @@
 }
 
 header {
-    background-color: rgb(176, 158, 195);
+    background-color: #ac9db3;
     padding-top: 1.3em;
 }
 header ul {
@@ -32,7 +32,7 @@ header button {
 }
 
 header button:hover {
-    background-color: rgb(136, 84, 185);
+    background-color: #8854b9;
 }
 header button:active {
     background-color: rgb(80, 39, 119);
@@ -62,4 +62,22 @@ header button:active {
 }
 .main-image-wrapper img {
     object-fit: cover;
+}
+.menu-item-wrapper {
+    padding: 2em;
+    background-color: #e1dbe4;
+    margin-inline: auto;
+    width: 85%;
+}
+
+.menu-item-title {
+    text-decoration: underline wavy #ac9db3;
+    color:#8854b9;
+    font-size: 1.3rem;
+}
+.menu-item-title + * {
+    margin-top: 0.8em;
+}
+.menu-item-desc {
+    color:#676668
 }
