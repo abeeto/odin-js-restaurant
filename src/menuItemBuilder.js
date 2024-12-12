@@ -1,6 +1,6 @@
 import paraBuilder from "./paraBuilder";
 
-export default function menuItemBuilder({itemName, description}) {
+export default function menuItemBuilder({itemName, description, associatedImageKey}) {
     const menuItemWrapper = document.createElement("div");
     menuItemWrapper.classList.add("menu-item-wrapper");
 
@@ -10,6 +10,7 @@ export default function menuItemBuilder({itemName, description}) {
 
     const menuItemDescription = paraBuilder(description);
     menuItemDescription.classList.add("menu-item-desc");
+    menuItemWrapper.setAttribute("data-associatedImageKey", associatedImageKey);
 
     menuItemWrapper.appendChild(menuItemNameTitle);
     menuItemWrapper.appendChild(menuItemDescription);
