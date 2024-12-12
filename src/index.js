@@ -1,5 +1,6 @@
 import "./style.css";
 
 import createHomePage from "./createHomePage";
-
-createHomePage();
+import createAboutPage from "./createAboutPage";
+// createHomePage();
+createAboutPage();
