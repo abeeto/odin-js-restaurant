@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const path = require("path");
 
 module.exports = {
-    mode: "development",
+    mode: "production",
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -17,7 +17,7 @@ module.exports = {
     module: {
         rules: [
             {test: /\.txt$/, use: "raw-loader", },
-            {test: /\.css$/i, use: ["style-loader", "css-loader"], },
+            {test: /\.css$/i, use: ["style-loader", "css-loader"],},
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
@@ -29,6 +29,7 @@ module.exports = {
             },
         ]
     },
+
     plugins: [new HtmlWebpackPlugin({template: "./src/template.html"})],
 
 }

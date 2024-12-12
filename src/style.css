@@ -39,3 +39,12 @@ header button:active {
     transition:  none;
 }
 
+#content {
+    display: grid;
+    grid-template-columns: auto-fit minmax(800px, 1fr);
+}
+
+.content-body {
+    grid-column-start: 2;
+    padding: 2em;
+}
